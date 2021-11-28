@@ -67,12 +67,22 @@ justify-content: bottom;
   overflow: hidden;
   background-size:contain;
   background-repeat: no-repeat;
-  background-position: right;
-  /* background-image:url('../Images/Burnout Gaming Background Removed Single Line.png');*/
+  background-image:url('../Images/BurnoutGaming1line.png');
+/*  background-position:right;*/
+  background-position-x: 80%;
   background-attachment:inherit;
   background-color: #333;
 }
-
+@media (max-width: 900px){
+    .topnav {
+        background-position-x:80%;
+    }
+}
+@media (max-width:850px){
+    .topnav {
+        background-position-x:70%;
+    }
+}
 .topnav a {
   float: left;
   display: block;
@@ -92,6 +102,7 @@ justify-content: bottom;
 
 .topnav .icon {
   display: none;
+  margin-left:30px;
 }
 dropdown {
     float: left;
@@ -143,7 +154,7 @@ dropdown {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -153,7 +164,7 @@ dropdown {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
