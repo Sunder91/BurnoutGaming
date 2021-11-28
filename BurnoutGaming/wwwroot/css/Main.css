@@ -69,18 +69,18 @@ justify-content: bottom;
   background-repeat: no-repeat;
   background-image:url('../Images/BurnoutGaming1line.png');
 /*  background-position:right;*/
-  background-position-x: 80%;
+  background-position-x: 85%;
   background-attachment:inherit;
   background-color: #333;
 }
 @media (max-width: 900px){
     .topnav {
-        background-position-x:80%;
+        background-position-x:85%;
     }
 }
 @media (max-width:850px){
     .topnav {
-        background-position-x:70%;
+        background-position-x:75%;
     }
 }
 .topnav a {
@@ -123,12 +123,12 @@ dropdown {
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -146,12 +146,12 @@ dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 @media screen and (max-width: 850px) {
