@@ -11,12 +11,29 @@
     <header>
             <div class="topnav" id="myTopnav">
                 <a class="active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home" style="color:white; display; inline"></i>BurnoutGaming</a>
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Gamers">About Us</a>
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Partners">Goals</a>
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Login"><i class="far fa-user" 
-                            style="color: white; display: inline;"></i>Login/Sign Up</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
-            </div>
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Gamers">About Us</a>
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Partners">Goals</a>
+                    <a class="" asp-area="" asp-controller="Home" asp-action="Login"><i class="far fa-user" 
+                    style="color: white; display: inline;"></i>Login/Sign Up</a>
+                    <div class="dropdown">
+                    <button class="dropbtn">Dropdown 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+             <a href="javascript: void(0)" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
+             <script>
+                 function topNav(){
+                     var x = document.getElementById("myTopnav");
+                     if (x.className === "topnav") {
+                         x.className += " responsive";
+                    } else {
+                         x.className = "topnav";
+                        }
+                    }
+             </script><!--works with the javascript here but not in the seperate code.  would like to figure out why.-->
+
+                    </div>
+             </div>
+
     </header>
  
       
