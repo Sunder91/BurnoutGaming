@@ -11,9 +11,10 @@
     <header>
             <div class="topnav" id="myTopnav">
                 <a class="active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home" style="color:white; display; inline"></i>BurnoutGaming</a>
-                            <a class="" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
-                            <a class="" asp-area="" asp-controller="Home" asp-action="Goals">Goals</a>
-        <a class="" asp-area="" asp-controller="Home" asp-action="Login"><i class="far fa-user" style="color: white; display: inline;"></i>Login/Sign Up</a><!--I want this to be on the right even when the rest of the screen goes into dropdown-->
+                            <a class="" asp-area="" asp-controller="Home" asp-action="Gamers">About Us</a>
+                            <a class="" asp-area="" asp-controller="Home" asp-action="Partners">Goals</a>
+                            <a class="" asp-area="" asp-controller="Home" asp-action="Login"><i class="far fa-user" 
+                            style="color: white; display: inline;"></i>Login/Sign Up</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
             </div>
     </header>
@@ -31,8 +32,6 @@
     <div class="footer">
   <img class="footer" src="Images/Burnout Gaming Background Removed Single Line.png">
   <div class="footertext">
-    <p style="float: left;">sadfsafd</p>
-    <p style="float: right;">sfdasafs</p>sdfsdfasddf
     </div>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

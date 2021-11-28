@@ -23,11 +23,11 @@ namespace BurnoutGaming.Controllers
             return View();
         }
 
-        public IActionResult AboutUs()
+        public IActionResult Gamers()
         {
             return View();
         }
-        public IActionResult Goals()
+        public IActionResult Streamers()
         {
             return View();
         }
