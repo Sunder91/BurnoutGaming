@@ -68,7 +68,7 @@ justify-content: bottom;
   background-size:contain;
   background-repeat: no-repeat;
   background-position: right;
-  /*background-image: url(Images/Burnout\ Gaming\ Background\ Removed\ Single\ Line.png);*/
+  background-image:url('../Images/Burnout Gaming Background Removed Single Line.png');
   background-attachment:inherit;
   background-color: #333;
 }
