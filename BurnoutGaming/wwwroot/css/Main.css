@@ -6,6 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: gray;
   opacity: 80%;
+  height:auto;
 }
 /* Style the header */
 .header {
@@ -188,6 +189,7 @@ dropdown {
 main {
   width: 100%;
   height: auto;
+  position:relative;
 }
 .topleft {
 position:absolute;
@@ -205,13 +207,13 @@ main .img{
 }
 main .txt{
   color: white;
-  overflow:auto;
+  position:;
 }
 
 /* Create three equal columns that floats next to each other */
 .row {
   display: inline-flex;
-  position: absolute;
+  position:;
   bottom: 70px;
   margin-bottom: 5px;
 
@@ -230,8 +232,10 @@ main .txt{
         min-height:5%;
         overflow: auto;
     }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:850px) {
     .row, .column {
+        width:100%;
         display:inline-block;
     }
 }
@@ -251,10 +255,9 @@ main .txt{
         max-height: 60px;
         object-fit: scale-down;
         padding: 10px;
-        position: absolute;
+        position:sticky;
         left: 0;
         bottom: 0;
-        margin-top: 5px;
     }
 
     .imgfooter {
@@ -272,10 +275,4 @@ main .txt{
         font: arial;
         font-weight: bold;
         position: relative;
-    }
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media (max-width: 600px) {
-        .column {
-            width: 100%;
-        }
     }
