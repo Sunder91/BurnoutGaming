@@ -84,6 +84,11 @@ justify-content: bottom;
         background-position-x:75%;
     }
 }
+@media (max-width:600px){
+    .topnav{
+        background-image:url(../Images/TwitchBannerNewFont.png);
+    }
+}
 .topnav a {
   float: left;
   display: block;
