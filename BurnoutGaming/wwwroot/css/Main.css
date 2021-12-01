@@ -65,7 +65,8 @@ justify-content: bottom;
 /*responsive top nav ---need to customize to fit site better*/
 
 .topnav {
-    position: sticky;
+    position:sticky;
+    width:100%;
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
