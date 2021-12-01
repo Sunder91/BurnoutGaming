@@ -225,8 +225,9 @@ main .txt{
 
 }
 @media (max-width:850px){
-    .row{
-        position:inherit;
+    .row {
+        position: inherit;
+        margin-bottom:60px;
     }
 }
 
@@ -249,7 +250,7 @@ main .txt{
     .row, .column {
         width:100%;
         display:inline-block;
-       max-height:fit-content;
+        max-height:fit-content;
     }
 }
         /* Clear floats after the columns */
