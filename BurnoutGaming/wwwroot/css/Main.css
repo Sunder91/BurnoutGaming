@@ -215,6 +215,7 @@ main .img{
   object-fit: cover;
   object-position: center;
   display: flex;
+  flex-wrap:inherit;
 }
 main .txt{
   color: white;
