@@ -197,9 +197,10 @@ dropdown {
 
 }/*end of topnav responsive material.  Relook all this over-->*/
 main {
+  display:flex;
   width: 100%;
   height: auto;
-  position:fixed;
+  position:;
 }
 .topleft {
 position:absolute;
@@ -222,14 +223,13 @@ main .txt{
 
 /* Create three equal columns that floats next to each other */
 .row {
-  display: inline-flex;
-  position:fixed;
-  bottom:70px;
+  display: flex;
   margin-bottom: 5px;
 
 }
 @media (max-width:850px){
     .row {
+        display:flex;
         position: inherit;
         margin-bottom:60px;
     }
@@ -252,8 +252,8 @@ main .txt{
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:850px) {
     .row, .column {
+        display: inherit;
         width:100%;
-        display:inline-block;
         max-height:fit-content;
     }
 }
