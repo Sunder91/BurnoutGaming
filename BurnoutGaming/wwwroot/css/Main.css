@@ -199,7 +199,7 @@ dropdown {
 main {
   display:flex;
   width: 100%;
-  height: auto;
+  height:fit-content;
   position:;
 }
 .topleft {
@@ -208,18 +208,13 @@ top: 75px;
 left: 16px;
 }
 main .img{
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  object-position: center;
   display: flex;
   flex-wrap:inherit;
+  margin:10px;
 }
 main .txt{
   color: white;
-  position:;
+  position:auto;
 }
 
 /* Create three equal columns that floats next to each other */
