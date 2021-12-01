@@ -249,6 +249,7 @@ main .txt{
     .row, .column {
         width:100%;
         display:inline-block;
+       max-height:fit-content;
     }
 }
         /* Clear floats after the columns */
