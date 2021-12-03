@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "mssql2": {
+      "secretStore": null,
+      "resourceId": null,
+      "type": "mssql.local",
+      "connectionId": "BurnoutGamingContext"
+    },
     "mssql1": {
       "secretStore": null,
       "resourceId": null,
