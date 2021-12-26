@@ -25,28 +25,28 @@ namespace BurnoutGaming.Models
                     {
                         MemberInfo = "5under5truck",
                         Name = "Adam",
-                        email = "a_sunder_91@hotmail.com",
+                        Email = "a_sunder_91@hotmail.com",
                     },
 
                     new Members
                     {
                         MemberInfo = "Reverand",
                         Name = "Jeff",
-                        email = "reverand@hotmail.com",
+                        Email = "reverand@hotmail.com",
                     },
 
                     new Members
                     {
                         MemberInfo = "MericanVenom",
                         Name = "Jaden",
-                        email = "MericanVenom@hotmail.com",
+                        Email = "MericanVenom@hotmail.com",
                     },
 
                     new Members
                     {
                         MemberInfo = "JoeMadBro",
                         Name = "Joe",
-                        email = "JoeMadBro@hotmail.com",
+                        Email = "JoeMadBro@hotmail.com",
                     }
                 );
                 context.SaveChanges();
