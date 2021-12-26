@@ -1,8 +1,58 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BurnoutGaming.Models.Members
+
 @{
+    ViewData["Title"] = "Create";
 }
-<html>
-    Page not available yet, coming soon!
-</html>
+
+<h1>Create</h1>
+
+<h4>Members</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" action="loginaction.cshtml" id="Login" style="display:block">
+        <pre>Username:<input type ="text" name="MemberInfo" id="MemberInfo" placeholder="Enter your Username" required ></pre>
+        <pre>Password:<input type = "password" name="Password" id="Password" placeholder="Enter your Password" required></pre>
+        <input class="button1" type="submit" value="submit" name="submit">
+        <input class="button2" type="button" name="RegistryShow" value="New users click here" onclick="LoginRegistry()">
+        </form>
+        <form method="post" action="RegisterUser.cshtml" class="" id="Register" style="display:none">
+        <span class="lfdesc">Please Register below</span>
+        <pre> First Name:<input type="text" name="FName" id="FName" placeholder="First Name" required ></pre>
+        <pre>  Last Name:<input type="text" name="LName" id="Lname" placeholder="Last Name" required ></pre>
+        <pre>      Email:<input type="text" name="UEmail" id="UEmail" placeholder="Email" required ></pre>
+        <pre>  User Name:<input type="text" name="Uname" id="Uname" placeholder="User Name" required ></pre>
+        <pre>   Password:<input type="password" name="Pswrd" id="Pswrd" placeholder="Password" required ></pre>
+        <br>Please enter the password given to you below to register.<br>
+        <pre>Access Code:<input type="text" name="VPswrd" id="VPswrd" placeholder="Enter validation code" required ></pre>
+        <input class="button1" type="submit" value="submit" name="submit">
+        <input class="button2" type="button" value="Already Registered? Click Here!" onclick ="LoginRegistry()"><br>
+              <script>//want to get this to load from a seperate file on its own.
+    function LoginRegistry(){
+    var x = document.getElementById("Register");
+    var y = document.getElementById("Login");
+    if(x.style.display === "none") {
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+    if(y.style.display === "block") {
+        y.style.display = "none";
+    }else{
+        y.style.display = "block";
+    }
+
+    }
+    </script>
+        </form>
+  
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
