@@ -9,32 +9,14 @@ using System.Threading.Tasks;
 
 namespace BurnoutGaming.Controllers
 {
-    public class HomeController : Controller
+    public class Streamers : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+       
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Gamers()
-        {
-            return View();
-        }
-        public IActionResult Streamers()
-        {
            
-            return View();
-        }
-        public IActionResult Login()
-        {
-            return View();
+        return View();
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

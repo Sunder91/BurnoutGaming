@@ -215,6 +215,7 @@ main .img{
 main .txt{
   color: white;
   position:auto;
+  margin-bottom: 15px;
 }
 
 /* Create three equal columns that floats next to each other */

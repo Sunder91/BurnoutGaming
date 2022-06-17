@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="5under5truck, Burnout Gaming, Maw Energy, Maw, Rogue Energy, MetaMeals, Small Streamer">
+    <meta name="description" content="I'm a small streamer starting out, I want to create a community to help other small streamers grow and
+          earn some money by utilizing affiliate marketing">
+    <meta name="author" content="5under5truck">
+    <title>5under5truck - BurnoutGaming</title>
+    <!--<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />     this is no longer needed-->
+    <link rel="stylesheet" href="~/css/Main.css" /><!--Main.css is Burnout Gamings css.  site.css is the original.-->
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a class="active" asp-area="" asp-controller="Streamers" asp-action="Index"><i class="fas fa-home" style="color:white; display; inline"></i>BurnoutGaming</a>
+            <a class="" asp-area="" asp-controller="Home" asp-action=""></a>
+            @Html.ActionLink("", "Streamers", "Streamers")
+            <a class="dropdown" asp-area="" asp-controller="" asp-action="Login">
+                <i class="far fa-user"
+                   style="color: white; display: inline;"></i>
+            </a>
+
+            <!--<div class="dropdown">
+                <i class="fa fa-caret-down"></i>
+                <a href="javascript: void(0)" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
+                <script>
+                    function topNav() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+                </script>--><!--works with the javascript here but not in the seperate code.  would like to figure out why.-->
+
+            <!--</div>-->
+        </div>
+
+    </header>
+
+
+    <span class="header">
+
+    </span>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="footer">
+        <img class="footer" src="~/Images/BurnoutGaming1line.png" />
+        <div class="footertext">
+        </div>
+        @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

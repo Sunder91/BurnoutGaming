@@ -9,29 +9,31 @@
 </head>
 <body>
     <header>
-            <div class="topnav" id="myTopnav">
-                <a class="active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home" style="color:white; display; inline"></i>BurnoutGaming</a>
-                    <a class="" asp-area="" asp-controller="Home" asp-action="Gamers">Gamers</a>
-                    <a class="" asp-area="" asp-controller="Home" asp-action="Streamers">Streamers</a>
-                    <a class="dropdown" asp-area="" asp-controller="Home" asp-action="Login"><i class="far fa-user" 
-                    style="color: white; display: inline;"></i>Login/Sign Up</a>
-                    <div class="dropdown">
-                    <i class="fa fa-caret-down"></i>
-             <a href="javascript: void(0)" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
-             <script>
-                 function topNav(){
-                     var x = document.getElementById("myTopnav");
-                     if (x.className === "topnav") {
-                         x.className += " responsive";
-                    } else {
-                         x.className = "topnav";
+        <div class="topnav" id="myTopnav">
+            <a class="active" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home" style="color:white; display; inline"></i>BurnoutGaming</a>
+            <a class="" asp-area="" asp-controller="Home" asp-action="Gamers">Gamers</a>
+            <a class="" asp-area="" asp-controller="Streamers" asp-action="Index">Streamers</a>
+            <a class="dropdown" asp-area="" asp-controller="Home" asp-action="Login">
+                <i class="far fa-user"
+                   style="color: white; display: inline;"></i>Login/Sign Up
+            </a>
+            <div class="dropdown">
+                <i class="fa fa-caret-down"></i>
+                <a href="javascript: void(0)" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
+                <script>
+                    function topNav() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
                         }
                     }
-                    
-             </script><!--works with the javascript here but not in the seperate code.  would like to figure out why.-->
 
-                    </div>
-             </div>
+                </script><!--works with the javascript here but not in the seperate code.  would like to figure out why.-->
+
+            </div>
+        </div>
 
     </header>
  
