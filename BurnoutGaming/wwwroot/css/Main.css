@@ -241,10 +241,11 @@ main .txt{
         float: left;
         width: 33.33%;
         padding: 10px;
-        margin-bottom: 5px;
+        margin: 0px 2px 5px 2px;
         min-height:5%;
         max-height:300px;
         overflow: auto;
+        border-radius: 10px;
     }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:850px) {
