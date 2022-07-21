@@ -9,6 +9,7 @@ body {
   height:auto;
 }
 /* Style the header */
+
 .header {
   padding: 10px;
   text-align:left;
@@ -65,16 +66,20 @@ justify-content: bottom;
 /*responsive top nav ---need to customize to fit site better*/
 
 .topnav {
-    position:sticky;
-    width:100%;
+    position: sticky;
+    width: 100%;
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../Images/BurnoutGaming1line.png');
     /*  background-position:right;*/
-    background-position-x: 85%;
+    background-position-x: 50%;
     background-attachment: inherit;
     background-color: #333;
+/*    background-color: ghostwhite;
+*/    min-height: 45px;
+
+}
 }
 @media (max-width: 900px){
     .topnav {
