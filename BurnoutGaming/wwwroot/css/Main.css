@@ -20,7 +20,7 @@ a:link {
 	text-decoration:none; 
 }
 a:visited {
-	color:gray;
+	color:ghostwhite;
 	text-decoration:none;
 }
 a:hover, a:active, a:focus {
@@ -73,14 +73,12 @@ justify-content: bottom;
     background-repeat: no-repeat;
     background-image: url('../Images/BurnoutGaming1line.png');
     /*  background-position:right;*/
-    background-position-x: 50%;
+    background-position-x: 65%;
     background-attachment: inherit;
     background-color: #333;
-    /*    background-color: ghostwhite;
-*/ min-height: 60px;
+    /*    background-color: ghostwhite;*/
     z-index: 0;
     position: inherit;
-}
 }
 @media (max-width: 900px){
     .topnav {
@@ -89,14 +87,54 @@ justify-content: bottom;
 }
 @media (max-width:850px){
     .topnav {
-        background-position-x:75%;
+        background-position-x: 75%;
     }
 }
 @media (max-width:600px){
-    .topnav{
-        background-image:url(../Images/TwitchBannerNewFont.png);
+    .topnav {
+        background-image: url('../Images/BurnoutGaming1line.png');
     }
 }
+
+.topnavstreamer {
+    position: sticky;
+    width: 100%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../Images/BurnoutGaming1line.png');
+    /*  background-position:right;*/
+    background-position-x: 50%;
+    background-attachment: inherit;
+    background-color: #333;
+    /*    background-color: ghostwhite;*/
+    min-height: 60px;
+    z-index: 0;
+    position: inherit;
+}
+@media (max-width: 900px) {
+    .topnavstreamer {
+        min-height: 100px;
+        background-position-x: 70%;
+    }
+}
+
+@media (max-width:725px) {
+    .topnavstreamer {
+        min-height: 100px;
+        background-position-x: 90%;
+    }
+}
+
+@media (max-width:665px) {
+    .topnavstreamer {
+        background-image: url('../Images/BurnoutGaming1line.png');
+        background-position-x: 50%;
+    }
+}
+
+
+
 .topnav a {
   float: left;
   display: block;
