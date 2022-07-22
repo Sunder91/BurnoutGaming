@@ -256,6 +256,44 @@ main .img{
   flex-wrap:inherit;
   margin:10px;
 }
+#profilepic {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 5px;
+    border-radius: 100px;
+    margin-top: -75px;
+    z-index: 1;
+    border-style: groove;
+    border-color: black;
+    animation: myfirst 2s ease-out 0s infinite alternate;
+}
+@keyframes myfirst {
+    0% {
+    border-top-color: blue;
+    border-top-style: groove;
+    }    
+
+25% {
+    border-right-style: groove;
+    border-right-color: yellow;
+    }
+
+50% {
+    border-bottom-style: groove;
+    border-bottom-color: blue;
+    }
+
+75% {
+    border-left-style: groove;
+    border-left-color: yellow;
+
+    }
+
+/*    100% {
+        background-color: red;
+    }*/
+}
 main .txt{
   color: white;
   position:auto;
