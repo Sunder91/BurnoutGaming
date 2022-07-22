@@ -260,9 +260,8 @@ main .img{
     width: 200px;
     height: 200px;
     float: left;
-    padding: 5px;
     border-radius: 100px;
-    margin-top: -75px;
+    margin: -75px 5px 5px 5px;
     z-index: 1;
     border-style: groove;
     border-color: black;
