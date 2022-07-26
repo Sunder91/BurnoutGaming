@@ -265,29 +265,25 @@ main .img{
     z-index: 1;
     border-style: groove;
     border-color: black;
-    animation: myfirst 2s ease-out 0s infinite alternate;
+    animation: myfirst 1s ease 0s infinite ;
 }
 @keyframes myfirst {
     0% {
-    border-top-color: blue;
-    border-top-style: groove;
-    }    
-
-25% {
-    border-right-style: groove;
-    border-right-color: yellow;
+        border-top-color: #009eff;
     }
 
-50% {
-    border-bottom-style: groove;
-    border-bottom-color: blue;
+    25% {
+        border-right-color: #009eff;
     }
 
-75% {
-    border-left-style: groove;
-    border-left-color: yellow;
-
+    50% {
+        border-bottom-color: #009eff;
     }
+
+    75% {
+        border-left-color: #009eff;
+    }
+
 
 /*    100% {
         background-color: red;
