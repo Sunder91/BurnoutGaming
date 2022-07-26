@@ -265,8 +265,9 @@ main .img{
     z-index: 2;
     border-style: groove;
     border-color: black;
-    animation: myfirst 1s ease 0s infinite ;
+    animation: myfirst 1s ease-in-out 0s infinite;
 }
+
 @keyframes myfirst {
     0% {
         border-top-color: #009eff;
@@ -283,8 +284,7 @@ main .img{
     75% {
         border-left-color: #009eff;
     }
-
-
+}
 /*    100% {
         background-color: red;
     }*/
