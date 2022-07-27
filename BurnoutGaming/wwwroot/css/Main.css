@@ -112,24 +112,11 @@ justify-content: bottom;
     z-index: 1;
     position: inherit;
 }
-@media (max-width: 900px) {
-    .topnavstreamer {
-        min-height: 100px;
-        background-position-x: 70%;
-    }
-}
-
-@media (max-width:725px) {
-    .topnavstreamer {
-        min-height: 100px;
-        background-position-x: 90%;
-    }
-}
 
 @media (max-width:665px) {
     .topnavstreamer {
         background-image: url('../Images/BurnoutGaming1line.png');
-        background-position-x: 50%;
+        background-position-x: 65%;
     }
 }
 
@@ -257,57 +244,88 @@ main .img{
   margin:10px;
 }
 #profilepic {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     float: left;
     border-radius: 100px;
-    margin: -75px 5px 5px 5px;
-    z-index: 2;
+    margin: -50px 5px 5px 5px;
+/*    margin: -50px 5px 5px -155px;
+*/    z-index: 2;
     border-style: groove;
     border-color: black;
     animation: myfirst 1s ease-in-out 0s infinite;
 }
-
-@keyframes myfirst {
-    0% {
-        border-top-color: #009eff;
-    }
-
-    25% {
-        border-right-color: #009eff;
-    }
-
-    50% {
-        border-bottom-color: #009eff;
-    }
-
-    75% {
-        border-left-color: #009eff;
+@media screen and (max-width:900px) {
+    #profilepic {
+        margin: -50px 5px 5px 5px;
+/*        margin: -50px 5px 5px -143px;
+*/        width: 125px;
+        height: 125px;
     }
 }
-/*    100% {
-        background-color: red;
-    }*/
-}
-main .txt{
-  color: white;
-  position:auto;
-  margin-bottom: 15px;
+@media screen and (max-width:450px) {
+    #profilepic {
+        width: 100px;
+        height: 100px;
+    }
 }
 
-/* Create three equal columns that floats next to each other */
-.row {
-  display: flex;
-  margin-bottom: 5px;
+    @keyframes myfirst {
+        0% {
+            border-top-color: #009eff;
+        }
 
+        25% {
+            border-right-color: #009eff;
+        }
+
+        50% {
+            border-bottom-color: #009eff;
+        }
+
+        75% {
+            border-left-color: #009eff;
+        }
+    }
+
+    main .txt {
+        color: white;
+        position: auto;
+        margin-bottom: 15px;
+        margin-top: -30px;
+    }
+/*.leftsidebar {
+    float: left;
+    max-width: 160px;
+    z-index: 1;
+    background-color: rgba(190, 190, 190, 0.5);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 0px;
+    margin-top: 35px;
+    border-radius: 20px;
 }
-@media (max-width:850px){
+@media screen and (max-width: 600px){
+    .leftsidebar{
+        display:none;
+    }
+}
+*/
+    /* Create three equal columns that floats next to each other */
     .row {
-        display:flex;
-        position: inherit;
-        margin-bottom:60px;
+        display: flex;
+        margin-bottom: 5px;
     }
-}
+
+    @media (max-width:850px) {
+        .row {
+            display: flex;
+            position: inherit;
+            margin-bottom: 60px;
+        }
+    }
+
 
     .column {
         background-color: rgba(190, 190, 190, 0.5);
@@ -319,26 +337,29 @@ main .txt{
         width: 33.33%;
         padding: 10px;
         margin: 0px 2px 5px 2px;
-        min-height:5%;
-        max-height:300px;
+        min-height: 5%;
+        max-height: 300px;
         overflow: auto;
         border-radius: 10px;
     }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:850px) {
-    .row, .column {
-        display: inherit;
-        width:100%;
-        max-height:fit-content;
-    }
-}
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            flex: 1;
+    
+
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:850px) {
+        .row, .column {
+            display: inherit;
+            width: 100%;
+            max-height: fit-content;
         }
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        flex: 1;
+    }
 
     /* Style the footer */
     .footer {
@@ -348,7 +369,7 @@ main .txt{
         max-height: 60px;
         object-fit: scale-down;
         padding: 10px;
-        position:fixed;
+        position: fixed;
         left: 0;
         bottom: 0;
     }
