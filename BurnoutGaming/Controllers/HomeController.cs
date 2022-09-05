@@ -17,7 +17,7 @@ namespace BurnoutGaming.Controllers
         {
             _logger = logger;
         }
-
+        //took this out because it was apparently causing issues
         //public IActionResult Index()
         //{
         //    return View();
