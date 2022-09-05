@@ -7,32 +7,32 @@
         public string ProfileImg { get; set; } //will have to be url
         public string Status { get; set; } // want to connect to this with socials like Twitter and Facebook
         public string aboutMe { get; set; }
-        public !string gamesPlayed { get; set; }
-        public !string otherInterests { get; set; }
+        public string gamesPlayed { get; set; }
+        public string otherInterests { get; set; }
         //public int socialId { get; set; }
         //public int affiliaionsId { get; set; }
 
         #region socials
         //if social is true include a bootstrap img next to it
         //may want to look into this being a seperate table all together as you could link the member id to these
-        public !bool hasTwitter { get; set; } 
-        public !bool hasTwitch { get; set; }
-        public !bool hasFacebook { get; set; }
-        public !bool hasYouTube { get; set; }
-        public !bool otherChannels { get; set; }
-        public !bool hasDiscord { get; set; }
-        public !bool hasTikTok { get; set; }
-        public !bool hasInstagram { get; set; }
+        public bool hasTwitter { get; set; } 
+        public bool hasTwitch { get; set; }
+        public bool hasFacebook { get; set; }
+        public bool hasYouTube { get; set; }
+        public bool otherChannels { get; set; }
+        public bool hasDiscord { get; set; }
+        public bool hasTikTok { get; set; }
+        public bool hasInstagram { get; set; }
 
         #endregion
 
         #region affiliations/partnerships/sponsorships
         //will probably want to make this into its own table as well but for the meantime
-        public !string affiliation1 { get; set; }
-        public !string affiliaton2 { get; set; }
-        public !string affiliation3 { get; set; }
-        public !string affiliation4 { get; set; }
-        public !string affiliation5 { get; set; }
+        public string affiliation1 { get; set; }
+        public string affiliaton2 { get; set; }
+        public string affiliation3 { get; set; }
+        public string affiliation4 { get; set; }
+        public string affiliation5 { get; set; }
         //make these nullable
         #endregion
 
