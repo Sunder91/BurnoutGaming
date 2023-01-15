@@ -463,3 +463,16 @@ main .txt {
     padding: 15px;
     float: right;
 }
+@media (max-width:900px) {
+    .links {
+        margin: -130px 15% 25px 15%;
+        width: 70%
+    }
+}
+
+@media (max-width:750px){
+    .links {
+        margin: -130px 8% 25px 8%;
+        width: 85%;
+    }
+}
