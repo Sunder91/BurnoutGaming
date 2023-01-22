@@ -128,6 +128,16 @@ nav {
     .topnavstreamer {
         background-image: url('../Images/BurnoutGaming1line.png');
         background-position-x: 65%;
+        background-position-y: 35%;
+    }
+
+    }
+@media (max-width:500px) {
+    .topnavstreamer {
+        background-image: url('../Images/BurnoutGaming1line.png');
+        background-position-x: 85%;
+        background-size: 65%;
+        background-position-y: 35%;
     }
 }
 
@@ -462,6 +472,9 @@ main .txt {
     margin: auto;
     padding: 15px;
     float: right;
+}
+.footer{
+    visibility:hidden;
 }
 @media (max-width:900px) {
     .links {
